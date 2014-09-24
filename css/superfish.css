@@ -51,7 +51,7 @@ nav {
 .sf-menu a {
 	font: 600 13px/14px 'Open Sans', sans-serif;
 	display:inline-block;
-	color:#fff;
+	color:#193889;
 	letter-spacing:0px;
 	text-transform:uppercase;
 	text-decoration: none;
@@ -62,14 +62,14 @@ nav {
 .sf-menu li.current>a,
 .sf-menu li.sfHover>a {
 	font: 600 13px/14px 'Open Sans', sans-serif;
-	color:#ff7f66;
+	color:#8cc63e;
 	text-decoration:none;
 }
 .sf-menu ul {
 	position: absolute;
 	top: -999em;
 	padding: 30px 0 15px;
-	background: #ff7f66 url('../images/bg_sub1.png') 0 0 repeat-x;
+	background: #8cc63e url('../images/bg_sub1.png') 0 0 repeat-x;
 }
 .sf-menu ul:after {
 	position: absolute;
