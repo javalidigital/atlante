@@ -1,0 +1,214 @@
+/*** MENU ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu {
+	line-height: 1.0;
+}
+.menuHolder{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 101px;
+}
+nav {
+	float: right;
+}
+.sf-menu > li > a .menu-arrow {
+	display: block;
+	width: 5px;
+	height: 3px;
+	position: absolute;
+	left: 46%;
+	top: 19px;
+	text-indent: -100%;
+	font-size: 0;
+	line-height: 0;
+	background: url('../images/menu_arrow.png') 0 -7px no-repeat;
+	vertical-align: middle;
+	z-index: 800;
+}
+.sf-menu ul > li > a .menu-arrow {
+	display: block;
+	width: 5px;
+	height: 3px;
+	position: absolute;
+	left: 125%;
+	top: 6px;
+	text-indent: -100%;
+	font-size: 0;
+	line-height: 0;
+	background: url('../images/menu_arrow.png') 0 -7px no-repeat;
+	vertical-align: middle;
+	z-index: 800;
+}
+.sf-menu li {
+	position:		relative;
+	display: inline-block;
+}
+.sf-menu a {
+	font: 600 13px/14px 'Open Sans', sans-serif;
+	display:inline-block;
+	color:#fff;
+	letter-spacing:0px;
+	text-transform:uppercase;
+	text-decoration: none;
+	position: relative;
+	margin: 0 0 0 34px;
+}
+.sf-menu a:hover,
+.sf-menu li.current>a,
+.sf-menu li.sfHover>a {
+	font: 600 13px/14px 'Open Sans', sans-serif;
+	color:#ff7f66;
+	text-decoration:none;
+}
+.sf-menu ul {
+	position: absolute;
+	top: -999em;
+	padding: 30px 0 15px;
+	background: #ff7f66 url('../images/bg_sub1.png') 0 0 repeat-x;
+}
+.sf-menu ul:after {
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 12px;
+	background: url('../images/arr_1.png') no-repeat 0 0;
+	top: -12px;
+	right: 67px;
+	pointer-events: none;
+	content: "";
+}
+.sf-menu ul ul {
+	position: absolute;
+	top: -999em;
+	background: #333745 url('../images/bg_sub2.png') 0 0 repeat-x;
+	-webkit-box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    1px 2px 0 rgba(0, 0, 0, 0.2);
+	box-shadow:         1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.sf-menu ul ul:after {
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 15px;
+	background: url('../images/arr_2.png') no-repeat 0 0;
+	top: 9px;
+	left: -12px;
+	pointer-events: none;
+	content: "";
+}
+.sf-menu ul li {
+	width: 150px;
+	height: 28px;
+	margin: 0;
+	text-align: center;
+}
+.sf-menu ul li a{
+	margin: 0;
+	font: 600 13px/15px 'Open Sans', sans-serif;
+	color: #fff;
+}
+.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+/* submenu_1 position */
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left: 0px;
+    top: 43px; /* match top ul list item height */
+	z-index: 99;
+}
+/* submenu_2 */
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top: -999em;
+}
+/* submenu_2 position */
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left: 162px;
+	top: -8px;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top: -999em;
+}
+.sf-menu li li a:hover,
+.sf-menu li.sfHover li.sfHover > a {
+	font: 600 13px/15px 'Open Sans', sans-serif;
+	color: #3e4354 !important;/* submenu_1 hover */
+}
+.sf-menu li li li a:hover,
+.sf-menu li li.sfHover li li.sfHover > a {
+	font: 600 13px/15px 'Open Sans', sans-serif;
+	color: #ff876d !important;/* submenu_2 hover */
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left: 10em; /* match ul width */
+	top: 0;
+}
+/* end submenu_2 */
+.sub-menu ul{
+	padding: 0!important;
+}
+
+.sub-menu li{
+	text-align: right!important;
+}
+
+
+
+.sf-menu a{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/* Design for a width of 768px */
+@media only screen and (max-width: 995px) {
+
+	.sf-menu a {
+			margin: 0 0 0 15px;
+		}
+	.sf-menu li:hover ul,
+	.sf-menu li.sfHover ul {
+		left: -19px;
+	}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	nav {
+		background: none;
+		width: 100%;
+	}
+	nav select {
+	    display: block !important;
+	    height: 21px;
+	    line-height: 21px;
+		border:1px solid #000;
+	    outline: medium none;
+	    padding: 0;
+	    width: 100%;
+	}
+	nav span,.sf-menu{
+		display:none
+	}
+	.menuHolder {
+		margin-top: 25px;
+	}
+
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {	
+nav span,
+.sf-menu{display:none}
+ 
+}

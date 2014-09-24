@@ -1,0 +1,17 @@
+.class { behavior:url(js/PIE.htc); position:absolute;}
+
+.button1, .button2, .list_1 img, .block_1, .list_5 li img, .list_4 li, 
+.list_6 li, .list_6 li .thumbnail img, #form input, #form textarea, #form .success { behavior:url(js/PIE.htc)}
+
+body{
+	min-width: 980px;
+}
+.button1:hover, .button2:hover {
+	background: #383b4a;
+}
+.list_4 li:hover{
+	background: #f67f68;
+}
+.list_4 li:hover a{
+	color: #fff;
+}
