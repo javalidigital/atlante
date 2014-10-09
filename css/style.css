@@ -53,8 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2{
 	font-size: 45px;
-	font-weight: 300;
-	text-transform: uppercase;
+	font-weight: 500;
 	color: #8cc63e;
 	margin: -4px 0 24px;
 }
@@ -65,7 +64,7 @@ h3{
 	margin-bottom: 38px
 }
 h4{
-	font-size: 25px;
+	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 17px;
 }
@@ -115,8 +114,8 @@ header {
 }
 .logo {
 	display:block; 
-	width: 233px; 
-	height: 62px; 
+	width: 319px; 
+	height: 28px; 
 	text-indent: -5000px; 
 	background: url('../images/logo.png') 0 0 no-repeat;
 	margin-top: 88px;
@@ -227,6 +226,7 @@ header {
 }
 #content p{
 	margin-bottom: 15px;
+	font-size:1em;
 }
 .extra-wrap{
 	overflow: hidden;
@@ -366,12 +366,13 @@ hr {
 .list_4 li a{
 	position: relative;
 	display: block;
-	padding-left: 17px;
-	width: 100%;
+	padding: 5%;
+	width: 90%;
+	line-height: 1.2em;
 }
 
 .link_3{
-	font: 300 25px/54px 'Open Sans', sans-serif;
+	font: 300 18px/48px 'Open Sans', sans-serif;
 	color: #2f353e;
 }
 .list_5{
@@ -403,6 +404,7 @@ hr {
 	margin: 5px 0 56px;
 }
 .list_6 li{
+	text-align:center;
 	position: relative;
 	background: #f6f6f6;
 	margin-bottom: 18px;
@@ -421,6 +423,7 @@ hr {
 	border-radius: 9px;
 	-moz-border-radius: 9px;
 	-webkit-border-radius: 9px;
+	margin-bottom:10px;
 }
 .list_6 li .thumbnail .caption{
 	padding: 11px 0 0;
@@ -714,7 +717,7 @@ footer p{
 		margin-right: 20px;
 	}
 	.list_6 li .thumbnail img {
-		width: 100%;
+		
 	}
 	.logo2{
 		margin-top: -129px;
@@ -741,4 +744,40 @@ footer p{
 }
 @media only screen and (max-width: 320px) {
 
+}
+
+
+ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 4em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 1.5em;
+    min-height: 3em;
+}
+ol > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.33em;
+    width: 1.2em;
+    height: 1.2em;
+     
+    font-size: 1.4em;
+    line-height: 1.2;
+    text-align: center;
+    color: #f5f5f5;
+ 
+    border: 3px solid #c5c5c5;
+    border-radius: 50%;
+    background-color: #464646;
+    content: counter(li-counter);
+    counter-increment: li-counter;
 }

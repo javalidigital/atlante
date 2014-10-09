@@ -49,11 +49,10 @@ nav {
 	display: inline-block;
 }
 .sf-menu a {
-	font: 600 13px/14px 'Open Sans', sans-serif;
+	font: 600 15px/16px 'Open Sans', sans-serif;
 	display:inline-block;
 	color:#193889;
 	letter-spacing:0px;
-	text-transform:uppercase;
 	text-decoration: none;
 	position: relative;
 	margin: 0 0 0 34px;
@@ -61,7 +60,7 @@ nav {
 .sf-menu a:hover,
 .sf-menu li.current>a,
 .sf-menu li.sfHover>a {
-	font: 600 13px/14px 'Open Sans', sans-serif;
+	font: 600 15px/16px 'Open Sans', sans-serif;
 	color:#8cc63e;
 	text-decoration:none;
 }

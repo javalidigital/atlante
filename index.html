@@ -15,7 +15,25 @@
      <script src="js/superfish.js"></script>
      <script src="js/jquery.mobilemenu.js"></script>
      <script src="js/jquery.ui.totop.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+     <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+     <link rel="stylesheet" type="text/css" href="css/owl.transitions.css" />
+     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
       <script>
+      
+      jQuery(document).ready(function() {
+ 
+	  jQuery(".device").owlCarousel({
+	  	items : 1,
+	  	autoPlay : true,
+	  	slideSpeed : 400,
+    	paginationSpeed : 800,
+    	rewindSpeed : 800,
+    	responsive:false,
+    	pagination:false
+	  });
+	});
+      
         jQuery(function(){
             $().UItoTop({ easingType: 'easeOutQuart' });
         });     
@@ -49,14 +67,16 @@
 						<li><a href="como-funciona.html" title="Descubra as funcionalidades da plataforma">Como Funciona</a></li>
 						<li><a href="faq.html" title="Veja as perguntas frequentes">FAQ</a></li>
 						<li><a href="contato.html" title="Entre em contato conosco">Contato</a></li>
-						<li><a href="#" title="Fa&ccedil;a o login no Atlante">Login</a></li>
+						<li><a href="login.html" title="Fa&ccedil;a o login no Atlante">Login</a></li>
 					</ul>
                 </nav>
             </div>
         </div>
         <div class="grid_12">
-            <div class="device">
-                <img src="images/device.png" alt="">               
+            <div class="device owl-theme owl-carousel">
+                <img src="images/device.png" alt="">
+                <img src="images/device2.png" alt=""> 
+                <img src="images/device3.png" alt="">               
             </div>
         </div>
     </div>
@@ -65,9 +85,9 @@
     <div class="container_12">
         <div class="grid_12">
             <div class="grid_8 alpha">
-                <p class="txt_1">Conhe&ccedil;a a plataforma Atlante</p>
-                <p class="txt_2">Mais produtividade e eficácia para o seu neg&oacute;cio</p>
-                <p class="txt_3">100% Online! Basta se conectar na Internet para acessar.</p>
+                <p class="txt_1">Sistema de gest&atilde;o Atlante</p>
+                <p class="txt_2">Empresas no segmento de TV a Cabo e telefonia</p>
+                <p class="txt_3">Mais produtividade e efic&aacute;cia para o seu neg&oacute;cio</p>
             </div>
             <div class="grid_4 omega">
                 <a class="button1 animate" href="contato.html">Solicite contato</a>
@@ -81,8 +101,8 @@
     <div class="container_12">
         <div class="grid_12 marg_2">
             <div class="grid_7 alpha">
-                <h2>Sistemas de gest&atilde;o</h2>
-                <h4 class="upper">para prestadoras de servi&ccedil;os no segmento de TV a Cabo e telefonia</h4>
+                <h2>Conhe&ccedil;a a plataforma</h2>
+                <h4 class="upper">Bastar estar online para utilizar!</h4>
                 <p>Com uma larga experi&ecirc;ncia no desenvolvimento de software para empreiteiras de TV a Cabo e telefonia, criamos um software de acompanhamento detalhado das opera&ccedil;&otilde;es dessas empresas e oferecemos solu&ccedil;&otilde;es sob medida que ir&atilde;o aumentar a produtividade e efici&ecirc;ncia do seu neg&oacute;cio.</p>                
                 <a class="button2 animate" href="como-funciona">Saiba mais</a>
             </div>
@@ -104,30 +124,30 @@
             <div class="grid_3 alpha">
                 <div class="title_1">
                     <img src="images/page1_pic4.png" alt="">
-                    <h4><a href="como-funciona.html" class="link_1">Sob medida</a></h4>
+                    <h4><a href="como-funciona.html" class="link_1">Customizado para o neg&oacute;cio</a></h4>
                 </div>
-                <p>Mes cuml dia sed in lacu eniascet ipsu ingerto aliiqt es sitet amet ut eismod ictor ut ligulate.</p>
+                <p>Um ERP customizado para as necessidades de prestadoras de servi&ccedil;o de TV a cabo e telefonia.</p>
             </div>
             <div class="grid_3">
                 <div class="title_1">
                     <img src="images/page1_pic5.png" alt="">
-                    <h4><a href="como-funciona.html" class="link_1">100% Online</a></h4>
+                    <h4><a href="como-funciona.html" class="link_1">Acess&iacute;vel pela Internet</a></h4>
                 </div>
-                <p>Mes cuml dia sed in lacu eniascet ipsu ingerto aliiqt es sitet amet ut eismod ictor ut ligulate.</p>
+                <p>O Atlante pode ser acessado de qualquer lugar, basta estar conectado &agrave; Internet.</p>
             </div>
             <div class="grid_3">
                 <div class="title_1">
                     <img src="images/page1_pic6.png" alt="">
-                    <h4><a href="como-funciona.html" class="link_1">Seguran&ccedil;a</a></h4>
+                    <h4><a href="como-funciona.html" class="link_1">Seguran&ccedil;a de dados</a></h4>
                 </div>
-                <p>Mes cuml dia sed in lacu eniascet ipsu ingerto aliiqt es sitet amet ut eismod ictor ut ligulate.</p>
+                <p>Os dados e demais informa&ccedil;&otilde;es da sua empresa estar&atilde;o seguros em nossos servidores.</p>
             </div>
             <div class="grid_3 omega">
                 <div class="title_1">
                     <img src="images/page1_pic7.png" alt="">
-                    <h4><a href="como-funciona.html" class="link_1">Suporte 24x7</a></h4>
+                    <h4><a href="como-funciona.html" class="link_1">Atendimento personalizado</a></h4>
                 </div>
-                <p>Mes cuml dia sed in lacu eniascet ipsu ingerto aliiqt es sitet amet ut eismod ictor ut ligulate.</p>
+                <p>Nosso atendimento &eacute; personalizado de modo a ajudar voc&ecirc; a extrair o m&aacute;ximo do Atlante.</p>
             </div>
             <div class="clearfix"></div> 
         </div>
@@ -139,14 +159,14 @@
         <div class="wrapper">
             <section class="grid_12">
                 <div class="grid_6 omega f-right">
-                    <ul class="soc-links">
+                    <!--<ul class="soc-links">
                         <li><a class="soc-link1" href="#" title="Facebook"></a></li>                        
                         <li><a class="soc-link3" href="#" title="Twitter"></a></li>
                         <li><a class="soc-link4" href="#" title="Google +"></a></li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="grid_6 alpha">
-                    <p><span>Fone</span> +55 11 3508-1930  |  <span>E-mail</span> <a href="mailto:contato@atlanteti.com">contato@atlanteti.com</a></p>
+                    <p><!--<span>Fone</span> +55 11 3508-1930  |  --><span>E-mail</span> <a href="mailto:contato@atlanteti.com">contato@atlanteti.com</a></p>
                     <p><span>Atlante</span> &copy; 2014. Todos os direitos reservados.</p>
                     
                 </div>
