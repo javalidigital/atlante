@@ -49,7 +49,7 @@ nav {
 	display: inline-block;
 }
 .sf-menu a {
-	font: 600 15px/16px 'Open Sans', sans-serif;
+	font: 600 15px/16px Helvetica, Arial, sans-serif;
 	display:inline-block;
 	color:#193889;
 	letter-spacing:0px;
@@ -60,7 +60,7 @@ nav {
 .sf-menu a:hover,
 .sf-menu li.current>a,
 .sf-menu li.sfHover>a {
-	font: 600 15px/16px 'Open Sans', sans-serif;
+	font: 600 15px/16px Helvetica, Arial, sans-serif;
 	color:#8cc63e;
 	text-decoration:none;
 }
@@ -108,7 +108,7 @@ nav {
 }
 .sf-menu ul li a{
 	margin: 0;
-	font: 600 13px/15px 'Open Sans', sans-serif;
+	font: 600 13px/15px Helvetica, Arial, sans-serif;
 	color: #fff;
 }
 .sf-menu li:hover {
@@ -138,12 +138,12 @@ ul.sf-menu li li.sfHover li ul {
 }
 .sf-menu li li a:hover,
 .sf-menu li.sfHover li.sfHover > a {
-	font: 600 13px/15px 'Open Sans', sans-serif;
+	font: 600 13px/15px Helvetica, Arial, sans-serif;
 	color: #3e4354 !important;/* submenu_1 hover */
 }
 .sf-menu li li li a:hover,
 .sf-menu li li.sfHover li li.sfHover > a {
-	font: 600 13px/15px 'Open Sans', sans-serif;
+	font: 600 13px/15px Helvetica, Arial, sans-serif;
 	color: #ff876d !important;/* submenu_2 hover */
 }
 ul.sf-menu li li li:hover ul,

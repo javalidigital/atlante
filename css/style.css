@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2{
 	font-size: 45px;
-	font-weight: 500;
+	font-weight: 100;
 	color: #8cc63e;
 	margin: -4px 0 24px;
 }
@@ -191,25 +191,35 @@ header {
 	margin-bottom: 28px;
 }
 .button1 {
-	font: 600 30px/30px 'Open Sans', sans-serif;
-    background: #f6f6f6 url("../images/bg_more1.jpg") repeat-x scroll 0 0;
-    color: #FFFFFF;
+	font: 400 24px/24px 'Open Sans', sans-serif;
+    background: none;
+    border:solid 1px #8cc63e;
+    color: #8cc63e;
     display: inline-block;
-    padding: 36px 27px 34px 39px;
+    padding: 26px 27px 24px 39px;
     float: right;
 	margin: 54px 0 0;
 	letter-spacing: -1px;
     position: relative;
     text-align: center;
-    text-shadow: 1px 2px 0 rgba(106, 155, 30, 1.0);
+    text-shadow: none;
     border-radius: 9px;
 	-moz-border-radius: 9px;
 	-webkit-border-radius: 9px;
 }
+
+.button1.button1-contact {
+	padding-top:18px;
+	padding-bottom:18px;
+	font-size: 16px;
+	margin-top:0;
+	text-transform: uppercase;
+
+}
+
 .button1:hover {
-	text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.4);
-	background-position: 0 bottom;
-	text-decoration:none;
+	border-color:#7bbd22;
+	color:#7bbd22;
 }
 .slider_box{
 	position: relative;
@@ -239,22 +249,18 @@ hr {
 	margin: 0 0 47px;
 }
 .button2 {
-	font: 15px/15px 'Open Sans', sans-serif;
-    background: #fff url("../images/bg_more2.jpg") repeat-x scroll 0 0;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    display: inline-block;
-    padding: 15px 15px 16px 19px;
-    position: relative;
-    text-align: center;
-    border-radius: 9px;
-	-moz-border-radius: 9px;
-	-webkit-border-radius: 9px;
-  	 margin-bottom: 40px;
+	font: 18px/18px 'Open Sans', sans-serif;
+	background: url("../images/icon-new-more.png") no-repeat;
+	text-transform: none;
+	color: #8cc63e;
+	display: inline-block;
+	padding: 7px 0px 6px 40px;
+	position: relative;
+	text-align: left;
+	margin-bottom: 40px;
 }
 .button2:hover {
-	background-position: 0 bottom;
-	text-decoration:none;
+	color:#71ab23;
 }
 .list_1{
 	position: relative;
@@ -354,6 +360,12 @@ hr {
 	width: 100%;
 	overflow: hidden;
 }
+
+	.list_4.list_4-contact {
+		color:#8dc640;
+		font-size: 1.2em;
+	}
+
 .list_4 li{
 	position: relative;
 	margin-bottom: 6px;
@@ -363,6 +375,31 @@ hr {
 	-moz-border-radius: 9px;
 	-webkit-border-radius: 9px;
 }
+
+
+	.list_4.list_4-contact li {
+		background: none;
+		margin-bottom: 20px;
+		padding-left: 40px;
+	}
+
+		.list_4.list_4-contact li .list_4-gray {
+			color:#b6babc;
+			font-size:0.8em;
+		}
+
+		ul.list_4-contact li.contact-adress {
+			background:url(../images/icon-sidebar-address.png) no-repeat top left;
+		}
+
+		ul.list_4-contact li.contact-phone {
+			background:url(../images/icon-sidebar-phone.png) no-repeat top left;
+		}
+
+		ul.list_4-contact li.contact-mail {
+			background:url(../images/icon-sidebar-mail.png) no-repeat top left;
+		}
+
 .list_4 li a{
 	position: relative;
 	display: block;
@@ -490,7 +527,7 @@ hr {
 	line-height: 18px;
 	padding: 8px 14px;
 	outline: medium none;
-	width: 350px;
+	width: 300px;
 	float:left;
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
@@ -538,7 +575,7 @@ hr {
 	position: absolute;
 	z-index: 999;
 	top: 5px;
-	right: 275px;
+	right:5px;
 }
 #form .error-empty {
 	display:none;
@@ -572,7 +609,7 @@ hr {
 	display: none;
 	position: absolute;
 	background: #fff;
-	width: 350px;
+	width: 300px;
 	border: 1px solid #e5e5e5;
 	text-align: center;
 	padding: 40px 10px;
@@ -603,12 +640,66 @@ hr {
 
 /************Footer************/
 footer {
+	background:#081025 url(../images/marca-dagua-rodape.png) no-repeat right bottom;
 	font: 300 14px/14px 'Open Sans', sans-serif;
 	display: block;
 	text-transform: uppercase;
-	background:  #061334;
-	padding: 52px 0 60px;
+	padding: 50px 0;
+	height:193px;
 }
+
+	footer h5 {
+		text-transform: none;
+		font-size: 16px;
+		color:#4e6f9a;
+		margin-bottom:10px;
+	}
+
+		footer a {
+			text-transform: none;
+			color:#4e6f9a;
+		}
+
+		.footer-box {
+			margin-top:15px;
+			font-size:0.9em;
+			color:#4e6f9a;
+			text-transform: none;
+			padding-left: 25px;
+		}
+
+			.footer-box.address {
+				background: url(../images/icon-footer-location.png) no-repeat top left;
+			}
+
+			.footer-box.phone {
+				background: url(../images/icon-footer-phone.png) no-repeat top left;
+			}
+
+			.footer-box.mail {
+				background: url(../images/icon-footer-mail.png) no-repeat top left;
+			}
+
+
+			.footer-box span.footer-box-gray {
+				color:#828282;
+				font-weight: normal;
+			}
+
+.footer-bottom {
+	background: #061335;
+	height: 10px;
+	padding: 30px 0;
+}
+
+	.footer-bottom .footer-copy {
+		background: url(../images/logo-footer.png) no-repeat 0 0;
+		color: #666c81;
+		font: 300 14px/14px 'Open Sans', sans-serif;
+		text-transform: uppercase;
+		padding: 2px 0 0 190px;
+	}
+
 footer span{
 	font-weight: 600;
 }
@@ -746,38 +837,49 @@ footer p{
 
 }
 
+ol.faq-list {
+	font-size: 1.2em;
+}
 
-ol {
-    list-style-type: none;
-    list-style-type: decimal !ie; /*IE 7- hack*/
-     
-    margin: 0;
-    margin-left: 4em;
-    padding: 0;
-     
-    counter-reset: li-counter;
+	ol.faq-list li {
+		padding-left: 85px;
+		margin-bottom: 20px;
+		height: 70px;
+		padding-top: 15px;
+	}
+
+		ol.faq-list li.faq-list-1 {
+			background:url(../images/icon-faq-1.png) no-repeat top left;
+		}
+
+		ol.faq-list li.faq-list-2 {
+			background:url(../images/icon-faq-2.png) no-repeat top left;
+		}
+
+		ol.faq-list li.faq-list-3 {
+			background:url(../images/icon-faq-3.png) no-repeat top left;
+		}
+
+		ol.faq-list li.faq-list-4 {
+			background:url(../images/icon-faq-4.png) no-repeat top left;
+		}
+
+img.testimonial-paragraph-q1 {
+	position: relative;
+	display:block;
+	float: left;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin: 10px 15px 0 0;
 }
-ol > li{
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 1.5em;
-    min-height: 3em;
-}
-ol > li:before {
-    position: absolute;
-    top: 0;
-    left: -1.33em;
-    width: 1.2em;
-    height: 1.2em;
-     
-    font-size: 1.4em;
-    line-height: 1.2;
-    text-align: center;
-    color: #f5f5f5;
- 
-    border: 3px solid #c5c5c5;
-    border-radius: 50%;
-    background-color: #464646;
-    content: counter(li-counter);
-    counter-increment: li-counter;
+
+img.testimonial-paragraph-q2 {
+	position: relative;
+	display:block;
+	float: right;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin: 10px 0 0 15px;
 }
