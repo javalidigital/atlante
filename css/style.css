@@ -700,13 +700,25 @@ footer {
 }
 
 	.footer-bottom .footer-copy {
-		background: url(../images/logo-footer.png) no-repeat 0 0;
 		color: #666c81;
 		font: 300 14px/14px 'Open Sans', sans-serif;
 		text-transform: uppercase;
-		padding: 2px 0 0 190px;
-		text-align: right;
 	}
+
+		.footer-bottom .footer-copy .grid_6 {
+			width:49%;
+			margin-right: 1%;
+			margin-left: 1%;
+		}
+
+			.footer-bottom .footer-copy .grid_6.alpha {
+				margin-left: 0;
+			}
+
+			.footer-bottom .footer-copy .omega {
+				margin-right: 0;
+				text-align: right;
+			}
 
 footer span{
 	font-weight: 600;
@@ -829,6 +841,10 @@ footer p{
 }
 @media only screen and (max-width: 479px) {
 
+	.footer-bottom .footer-copy {
+		font-size: 12px;
+	}
+
 	.list_5 li img{
 		position: relative;
 		display: block;
@@ -842,6 +858,9 @@ footer p{
 
 }
 @media only screen and (max-width: 320px) {
+	.footer-bottom .footer-copy {
+		font-size: 8px;
+	}
 
 }
 
